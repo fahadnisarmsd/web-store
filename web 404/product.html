@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Product — Erahh Clothing</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a class="brand" href="index.html"><div class="logo-pill">ERAHH</div></a>
+      <nav class="site-nav"><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+      <div class="header-icons">
+        <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <a href="cart.html">🛒 <span class="cart-count small muted">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container" style="margin-top:18px">
+    <div style="display:grid;grid-template-columns:1fr 420px; gap:28px; align-items:start">
+      <div style="background:#fff;padding:18px;border-radius:12px;box-shadow:var(--shadow)">
+        <img class="prod-img" src="" alt="Product image" style="width:100%; height:520px; object-fit:cover; border-radius:10px">
+      </div>
+
+      <aside style="display:flex;flex-direction:column;gap:12px">
+        <div class="form-card">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <div class="muted small">Brand</div>
+              <div class="prod-title" style="font-weight:800; font-size:20px; margin-top:8px">Product</div>
+            </div>
+            <div class="muted small prod-stock">In Stock: -</div>
+          </div>
+
+          <div style="margin-top:12px">
+            <div class="prod-price" style="font-weight:800; font-size:18px">Rs. <span class="prod-price-val"></span></div>
+            <div class="muted small prod-old" style="text-decoration:line-through"></div>
+          </div>
+
+          <div style="margin-top:12px">
+            <div class="muted small">Select Size</div>
+            <div class="prod-sizes" style="margin-top:8px"></div>
+          </div>
+
+          <div style="margin-top:12px">
+            <div class="muted small">Quantity</div>
+            <input class="prod-qty" type="number" value="1" min="1" style="width:80px;padding:8px;border-radius:8px;border:1px solid #e7eef5;margin-top:8px">
+          </div>
+
+          <div style="margin-top:14px">
+            <button class="view-btn add-cart" style="width:100%">Add to Cart</button>
+          </div>
+
+          <div style="margin-top:12px; display:flex; gap:8px; align-items:center">
+            <a id="share-fb" href="#" target="_blank" class="small muted">Share</a>
+            <a id="share-wa" href="#" target="_blank" class="small muted">WhatsApp</a>
+          </div>
+        </div>
+        
+<!-- Customer Reviews Card -->
+<div class="form-card">
+  <h4 style="margin-bottom:12px">Customer Reviews</h4>
+  
+  <!-- Reviews List -->
+  <div id="reviews-list">
+    <div class="review">
+      <strong>Sarah K.</strong> <span class="small muted">– 5/5</span>
+      <p>Amazing quality and fast delivery! Highly recommended.</p>
+    </div>
+    <div class="review">
+      <strong>Ali R.</strong> <span class="small muted">– 4.5/5</span>
+      <p>Very stylish and fits perfectly. Will buy again.</p>
+    </div>
+    <div class="review">
+      <strong>Maya S.</strong> <span class="small muted">– 5/5</span>
+      <p>Love the fabric and design! Excellent service.</p>
+    </div>
+  </div>
+
+  <hr style="margin:14px 0">
+
+  <!-- Write a Review Form -->
+  <h5 style="margin-bottom:8px">Write a Review</h5>
+  <input type="text" id="reviewer-name" placeholder="Your name" style="margin-bottom:8px">
+  <input type="number" id="review-rating" placeholder="Rating (1-5)" min="1" max="5" style="margin-bottom:8px">
+  <textarea id="review-text" placeholder="Your review" rows="3" style="margin-bottom:8px"></textarea>
+  <button id="submit-review" class="view-btn" style="width:100%">Submit Review</button>
+</div>
+
+<script>
+  // Review submission
+  document.getElementById('submit-review').addEventListener('click', function() {
+    const name = document.getElementById('reviewer-name').value.trim();
+    const rating = document.getElementById('review-rating').value.trim();
+    const text = document.getElementById('review-text').value.trim();
+
+    if(!name || !rating || !text) {
+      alert("Please fill in all fields.");
+      return;
+    }
+
+    const reviewList = document.getElementById('reviews-list');
+
+    const newReview = document.createElement('div');
+    newReview.classList.add('review');
+    newReview.innerHTML = `<strong>${name}</strong> <span class="small muted">– ${rating}/5</span>
+                           <p>${text}</p>`;
+
+    // Add new review at the top
+    reviewList.prepend(newReview);
+
+    // Clear form
+    document.getElementById('reviewer-name').value = '';
+    document.getElementById('review-rating').value = '';
+    document.getElementById('review-text').value = '';
+  });
+</script>
+
+  </div>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <div class="footer-logo">ERAHH</div>
+        <div class="muted small">Premium fashion for modern professional.</div>
+      </div>
+      <div class="footer-col">
+        <div style="font-weight:700;color:#dbe6f1">Quick Links</div>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <div style="font-weight:700;color:#dbe6f1">Contact</div>
+        <a href="tel:+92 3001003030">+92 300 1003030</a>
+        <a href="mailto:info@erahhclothing.com">info@erahhclothing.com</a>
+      </div>
+    </div>
+    
+    <!-- CENTERED FOOTER BOTTOM -->
+    <div class="footer-bottom">
+      <p class="small muted">&copy; 2023 Erahh Clothing. All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="#" data-modal="privacy" class="small muted">Privacy Policy</a>
+        <a href="#" data-modal="terms" class="small muted">Terms of Service</a>
+        <a href="#" data-modal="cookie" class="small muted">Cookie Policy</a>
+        <a href="#" data-modal="sitemap" class="small muted">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+<a class="whatsapp" href="https://wa.me/92 3001003030" target="_blank" aria-label="WhatsApp" style="position:fixed;right:22px;bottom:22px;">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path fill="#fff" d="M20.52 3.48a11.96 11.96 0 10-16.97 16.97l-1.37 4.99 5.08-1.35A11.96 11.96 0 0020.52 3.48z"/><path d="M17.347 14.52c-.293-.146-1.732-.856-2.002-.953-.27-.098-.467-.146-.664.147-.197.293-.76.953-.93 1.147-.172.197-.345.219-.637.073-.293-.146-1.236-.455-2.35-1.45-.869-.773-1.455-1.727-1.626-2.02-.172-.293-.018-.452.129-.598.132-.132.293-.345.439-.517.146-.172.195-.293.293-.488.098-.197.049-.369-.024-.516-.073-.146-.664-1.6-.909-2.195-.239-.577-.482-.5-.663-.51l-.565-.01c-.197 0-.516.073-.787.369-.27.293-1.03 1.01-1.03 2.46 0 1.45 1.055 2.852 1.2 3.049.146.197 2.07 3.17 5.022 4.44 2.95 1.27 2.95.848 3.48.802.516-.049 1.73-.7 1.976-1.374.246-.674.246-1.25.172-1.374-.073-.122-.267-.197-.56-.343z" fill="#fff"/></svg>
+  </a>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cart — Erahh Clothing</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">        
+    <div class="header-inner">
+      <a class="brand" href="index.html"><div class="logo-pill">ERAHH</div></a>
+      <nav class="site-nav"><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+      <div class="header-icons">
+        <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <a href="cart.html">🛒 <span class="cart-count small muted">0</span></a>
+      </div>
+    </div>
+  </header>
+      
+  <main class="container">
+    <h1>Your Cart</h1>
+    <div style="display:grid;grid-template-columns:1fr 320px; gap:18px; margin-top:18px">
+      <div>
+        <div class="cart-list"></div>
+      </div>
+
+      <aside>
+        <div class="order-summary">
+          <h3>Order Summary</h3>
+          <div style="display:flex;justify-content:space-between"><div class="muted small">Subtotal</div><div class="subtotal-amt">Rs. 0</div></div>
+          <div style="display:flex;justify-content:space-between;margin-top:8px"><div class="muted small">Shipping</div><div class="shipping-amt">Rs. 200</div></div>
+          <hr style="margin:12px 0;border:none;border-top:1px dashed #e6eef5">
+          <div style="display:flex;justify-content:space-between;font-weight:800"><div>Total</div><div class="total-amt">Rs. 0</div></div>
+          <a href="checkout.html"><button class="cta" style="width:100%;margin-top:12px">Proceed to Checkout</button></a>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <div class="footer-logo">ERAHH</div>
+        <div class="muted small">Premium fashion for modern professional.</div>
+      </div>
+      <div class="footer-col">
+        <div style="font-weight:700;color:#dbe6f1">Quick Links</div>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <div style="font-weight:700;color:#dbe6f1">Contact</div>
+        <a href="tel:+92 3001003030">+92 300 1003030</a>
+        <a href="mailto:info@erahhclothing.com">info@erahhclothing.com</a>
+      </div>
+    </div>
+    
+    <!-- CENTERED FOOTER BOTTOM -->
+    <div class="footer-bottom">
+      <p class="small muted">&copy; 2023 Erahh Clothing. All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="#" data-modal="privacy" class="small muted">Privacy Policy</a>
+        <a href="#" data-modal="terms" class="small muted">Terms of Service</a>
+        <a href="#" data-modal="cookie" class="small muted">Cookie Policy</a>
+        <a href="#" data-modal="sitemap" class="small muted">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+<a class="whatsapp" href="https://wa.me/92 3001003030" target="_blank" aria-label="WhatsApp" style="position:fixed;right:22px;bottom:22px;">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path fill="#fff" d="M20.52 3.48a11.96 11.96 0 10-16.97 16.97l-1.37 4.99 5.08-1.35A11.96 11.96 0 0020.52 3.48z"/><path d="M17.347 14.52c-.293-.146-1.732-.856-2.002-.953-.27-.098-.467-.146-.664.147-.197.293-.76.953-.93 1.147-.172.197-.345.219-.637.073-.293-.146-1.236-.455-2.35-1.45-.869-.773-1.455-1.727-1.626-2.02-.172-.293-.018-.452.129-.598.132-.132.293-.345.439-.517.146-.172.195-.293.293-.488.098-.197.049-.369-.024-.516-.073-.146-.664-1.6-.909-2.195-.239-.577-.482-.5-.663-.51l-.565-.01c-.197 0-.516.073-.787.369-.27.293-1.03 1.01-1.03 2.46 0 1.45 1.055 2.852 1.2 3.049.146.197 2.07 3.17 5.022 4.44 2.95 1.27 2.95.848 3.48.802.516-.049 1.73-.7 1.976-1.374.246-.674.246-1.25.172-1.374-.073-.122-.267-.197-.56-.343z" fill="#fff"/></svg>
+  </a>
+
+  <script src="main.js"></script>
+</body>
+</html>

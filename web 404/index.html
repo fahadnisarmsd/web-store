@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Erahh Clothing — Home</title>
+  <meta name="description" content="Erahh Clothing - modern, stylish apparel. Shop premium textiles and curated collections.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <div class="logo-pill">ERAHH</div>
+        <div class="muted small">Clothing</div>
+      </a>
+      <nav class="site-nav">
+        <a href="index.html" class="active">Home</a>
+        <div class="dropdown">
+          <a href="shop.html">Shop</a>
+          <div class="dropdown-content">
+            <a href="shop.html?category=Men">Men</a>
+            <a href="shop.html?category=Women">Women</a>
+            <a href="shop.html?category=Accessories">Accessories</a>
+          </div>
+        </div>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-icons">
+        <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <a href="cart.html">🛒 <span class="cart-count small muted">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Premium Fashion for the Modern Professional</h1>
+        <p>Discover our curated collection of sophisticated attire crafted from the finest materials. Timeless elegance meets contemporary design.</p>
+        <a href="shop.html" class="cta">Shop New Arrivals</a>
+      </div>
+      <div class="hero-right">
+        <div style="background:var(--accent); padding:20px;border-radius:12px; max-width:400px; box-shadow:var(--shadow)">
+          <div style="font-weight:700; font-size:18px; margin-bottom:8px">Free shipping on orders over Rs. 5,000</div>
+          <div class="small muted">Premium quality guarantee • 30-day returns • Worldwide delivery</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image Slider -->
+    <div class="container">
+      <div class="slider-container">
+        <div class="slides">
+          <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1800&auto=format&fit=crop')"></div>
+          <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1800&auto=format&fit=crop')"></div>
+          <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1800&auto=format&fit=crop')"></div>
+        </div>
+        <div class="slider-nav">
+          <button class="slider-prev">&lt;</button>
+          <button class="slider-next">&gt;</button>
+        </div>
+        <div class="slider-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h3 style="margin-bottom:16px">Featured Products</h3>
+      <div class="products" aria-live="polite"></div>
+    </div>
+
+    <!-- Parallax Section -->
+    <div class="parallax" style="background-image: url('https://images.unsplash.com/photo-1445205170230-053b83016050?q=80&w=1800&auto=format&fit=crop')">
+      <div class="parallax-content">
+        <h2>Crafted with Excellence</h2>
+        <p>Every piece in our collection is meticulously designed and crafted to ensure the perfect balance of comfort, style, and durability.</p>
+        <a href="shop.html" class="cta">Explore Collection</a>
+      </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="container">
+      <h2 style="margin-bottom:20px">Frequently Asked Questions</h2>
+      <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-header">What is your return policy?</div>
+          <div class="accordion-content">
+            <p>We offer a 30-day return policy for all items in their original condition with tags attached. Simply contact our customer service team to initiate a return. Refunds are processed within 5-7 business days after we receive the returned item.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">How long does shipping take?</div>
+          <div class="accordion-content">
+            <p>Standard shipping typically takes 5-7 business days. Express shipping options are available at checkout for 2-3 business day delivery. International shipping times vary by destination.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">Do you offer international shipping?</div>
+          <div class="accordion-content">
+            <p>Yes, we ship to over 50 countries worldwide. International shipping rates and delivery times vary by location. You can check if we ship to your country at checkout.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">How can I track my order?</div>
+          <div class="accordion-content">
+            <p>Once your order ships, you'll receive a confirmation email with a tracking number. You can use this number to track your package on our website or the carrier's website.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="stats">
+      <div class="stats-inner">
+        <div class="stat"><h2>15,000+</h2><p class="muted">Happy Customers</p></div>
+        <div class="stat"><h2>800+</h2><p class="muted">Premium Products</p></div>
+        <div class="stat"><h2>75+</h2><p class="muted">Cities Served</p></div>
+        <div class="stat"><h2>4.9/5</h2><p class="muted">Customer Rating</p></div>
+      </div>
+    </section>
+    
+    <div style="height:28px"></div>
+
+    <section class="container">
+      <div style="display:flex; gap:24px; flex-wrap:wrap">
+        <div style="flex:1; min-width:260px" class="form-card">
+          <h4 style="margin-bottom:10px">Join our exclusive newsletter</h4>
+          <p class="muted small">Get 15% off on your first order and early access to new collections</p>
+          <form onsubmit="event.preventDefault(); showNotification('Thanks for subscribing! Check your email for the discount code.');">
+            <input type="email" placeholder="Email address" required>
+            <button class="cta" style="margin-top:8px">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <div class="footer-logo">ERAHH</div>
+        <div class="muted small">Premium fashion for modern professional.</div>
+      </div>
+      <div class="footer-col">
+        <div style="font-weight:700;color:#dbe6f1">Quick Links</div>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <div style="font-weight:700;color:#dbe6f1">Contact</div>
+        <a href="tel:+92 3001003030">+92 300 1003030</a>
+        <a href="mailto:info@erahhclothing.com">info@erahhclothing.com</a>
+      </div>
+    </div>
+    
+    <!-- CENTERED FOOTER BOTTOM -->
+    <div class="footer-bottom">
+      <p class="small muted">&copy; 2023 Erahh Clothing. All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="#" data-modal="privacy" class="small muted">Privacy Policy</a>
+        <a href="#" data-modal="terms" class="small muted">Terms of Service</a>
+        <a href="#" data-modal="cookie" class="small muted">Cookie Policy</a>
+        <a href="#" data-modal="sitemap" class="small muted">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp" href="https://wa.me/92 3001003030" target="_blank" aria-label="WhatsApp" style="position:fixed;right:22px;bottom:22px;">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path fill="#fff" d="M20.52 3.48a11.96 11.96 0 10-16.97 16.97l-1.37 4.99 5.08-1.35A11.96 11.96 0 0020.52 3.48z"/><path d="M17.347 14.52c-.293-.146-1.732-.856-2.002-.953-.27-.098-.467-.146-.664.147-.197.293-.76.953-.93 1.147-.172.197-.345.219-.637.073-.293-.146-1.236-.455-2.35-1.45-.869-.773-1.455-1.727-1.626-2.02-.172-.293-.018-.452.129-.598.132-.132.293-.345.439-.517.146-.172.195-.293.293-.488.098-.197.049-.369-.024-.516-.073-.146-.664-1.6-.909-2.195-.239-.577-.482-.5-.663-.51l-.565-.01c-.197 0-.516.073-.787.369-.27.293-1.03 1.01-1.03 2.46 0 1.45 1.055 2.852 1.2 3.049.146.197 2.07 3.17 5.022 4.44 2.95 1.27 2.95.848 3.48.802.516-.049 1.73-.7 1.976-1.374.246-.674.246-1.25.172-1.374-.073-.122-.267-.197-.56-.343z" fill="#fff"/></svg>
+  </a>
+
+  <script src="main.js"></script>
+</body>
+</html>

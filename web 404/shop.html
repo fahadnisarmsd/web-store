@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Erahh Clothing — Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a class="brand" href="index.html"><div class="logo-pill">ERAHH</div></a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="shop.html" class="active">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-icons">
+        <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <a href="cart.html">🛒 <span class="cart-count small muted">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container grid">
+    <aside class="sidebar">
+      <div class="filter-card">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div class="filter-title">Filters</div>
+          <div id="clear-all" class="small muted" style="cursor:pointer">Clear All</div>
+        </div>
+      </div>
+
+      <div class="filter-card">
+        <div class="filter-title">Category</div>
+        <div class="checkbox-list">
+          <label><input type="checkbox" class="cat-check" value="Men"> Men</label>
+          <label><input type="checkbox" class="cat-check" value="Women"> Women</label>
+          <label><input type="checkbox" class="cat-check" value="Accessories"> Accessories</label>
+        </div>
+      </div>
+
+      <div class="filter-card">
+        <div class="filter-title">Size</div>
+        <div class="size-list">
+          <button class="size-btn" data-size="S">S</button>
+          <button class="size-btn" data-size="M">M</button>
+          <button class="size-btn" data-size="L">L</button>
+          <button class="size-btn" data-size="XL">XL</button>
+          <button class="size-btn" data-size="One">One Size</button>
+        </div>
+      </div>
+
+      <div class="filter-card">
+        <div class="filter-title">Color</div>
+        <div class="color-swatch">
+          <label><input type="checkbox" class="color-check" value="White"> <span class="small muted">White</span></label>
+        </div>
+        <div class="color-swatch">
+          <label><input type="checkbox" class="color-check" value="Navy"> <span class="small muted">Navy</span></label>
+        </div>
+        <div class="color-swatch">
+          <label><input type="checkbox" class="color-check" value="Black"> <span class="small muted">Black</span></label>
+        </div>
+        <div class="color-swatch">
+          <label><input type="checkbox" class="color-check" value="Brown"> <span class="small muted">Brown</span></label>
+        </div>
+        <div class="color-swatch">
+          <label><input type="checkbox" class="color-check" value="Khaki"> <span class="small muted">Khaki</span></label>
+        </div>
+        <div class="color-swatch">
+          <label><input type="checkbox" class="color-check" value="Gray"> <span class="small muted">Gray</span></label>
+        </div>
+        <div class="color-swatch">
+          <label><input type="checkbox" class="color-check" value="Blue"> <span class="small muted">Blue</span></label>
+        </div>
+        <div class="color-swatch">
+          <label><input type="checkbox" class="color-check" value="Cream"> <span class="small muted">Cream</span></label>
+        </div>
+      </div>
+
+      <div class="filter-card">
+        <div class="filter-title">Price Range</div>
+        <div class="price-range">
+          <input id="price-min" type="range" min="0" max="10000" value="0">
+          <input id="price-max" type="range" min="0" max="10000" value="10000" style="margin-top:8px">
+          <div class="price-values"><div id="min-val">Rs. 0</div><div id="max-val">Rs. 10,000</div></div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="meta">Showing <span class="muted">—</span> products</div>
+      <div class="products" aria-live="polite"></div>
+    </main>
+  </div>
+
+    <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <div class="footer-logo">ERAHH</div>
+        <div class="muted small">Premium fashion for modern professional.</div>
+      </div>
+      <div class="footer-col">
+        <div style="font-weight:700;color:#dbe6f1">Quick Links</div>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <div style="font-weight:700;color:#dbe6f1">Contact</div>
+        <a href="tel:+92 3001003030">+92 300 1003030</a>
+        <a href="mailto:info@erahhclothing.com">info@erahhclothing.com</a>
+      </div>
+    </div>
+    
+    <!-- CENTERED FOOTER BOTTOM -->
+    <div class="footer-bottom">
+      <p class="small muted">&copy; 2023 Erahh Clothing. All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="#" data-modal="privacy" class="small muted">Privacy Policy</a>
+        <a href="#" data-modal="terms" class="small muted">Terms of Service</a>
+        <a href="#" data-modal="cookie" class="small muted">Cookie Policy</a>
+        <a href="#" data-modal="sitemap" class="small muted">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp" href="https://wa.me/92 3001003030" target="_blank" aria-label="WhatsApp" style="position:fixed;right:22px;bottom:22px;">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path fill="#fff" d="M20.52 3.48a11.96 11.96 0 10-16.97 16.97l-1.37 4.99 5.08-1.35A11.96 11.96 0 0020.52 3.48z"/><path d="M17.347 14.52c-.293-.146-1.732-.856-2.002-.953-.27-.098-.467-.146-.664.147-.197.293-.76.953-.93 1.147-.172.197-.345.219-.637.073-.293-.146-1.236-.455-2.35-1.45-.869-.773-1.455-1.727-1.626-2.02-.172-.293-.018-.452.129-.598.132-.132.293-.345.439-.517.146-.172.195-.293.293-.488.098-.197.049-.369-.024-.516-.073-.146-.664-1.6-.909-2.195-.239-.577-.482-.5-.663-.51l-.565-.01c-.197 0-.516.073-.787.369-.27.293-1.03 1.01-1.03 2.46 0 1.45 1.055 2.852 1.2 3.049.146.197 2.07 3.17 5.022 4.44 2.95 1.27 2.95.848 3.48.802.516-.049 1.73-.7 1.976-1.374.246-.674.246-1.25.172-1.374-.073-.122-.267-.197-.56-.343z" fill="#fff"/></svg>
+  </a>
+
+  <script src="main.js"></script>
+</body>
+</html>
